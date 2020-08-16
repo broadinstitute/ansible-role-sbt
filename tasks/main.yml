@@ -10,7 +10,5 @@
 - name: Install packages
   yum:
     name:
-      - sbt
-    version:
-      - "{{ sbt_version }}"
+      - sbt-"{{ sbt_version }}"
     state: present
